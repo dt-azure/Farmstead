@@ -21,6 +21,10 @@ body {
     font-family: 'Source Sans 3', sans-serif;
 }
 
+h1, h2, h3, h4 {
+    font-family: var(--header-font);
+}
+
 .btn:focus,
 .form-control:focus {
     box-shadow: none;
@@ -100,7 +104,7 @@ header {
     border-radius: 10em;
     padding: 0 10px;
     caret-color: transparent;
-    transition: width 0.5s, background-position 0.2s, caret-color 0.5s ease 0.3s;
+    transition: width 0.3s ease, background-position 0.2s, caret-color 0.5s ease 0.3s;
 }
 
 .search-bar input:focus {
@@ -126,7 +130,7 @@ header {
 }
 
 .dark-theme {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--bg-color);
 }
 
@@ -135,7 +139,7 @@ header {
 }
 
 .dropdown-toggle i {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--bg-color);
 }
 
@@ -143,13 +147,37 @@ header {
     padding: 0;
 }
 
-/* Banner */
-.banner {
-    position: absolute;
-    top: 0;
-    left: 0;
+.dropdown-menu {
+    box-shadow: 0 20px 62px rgba(4, 20, 69, .1);
+    min-width: 14rem;
+    height: 0;
+    padding: 5px 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.7s;
 }
 
+.dropdown-menu.show {
+    opacity: 1;
+    height: 310px;
+}
+
+.dropdown-item {
+    padding: 7px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.dropdown-item:first-of-type {
+    color: var(--primary-color);
+}
+
+.dropdown-item:hover {
+    color: var(--primary-color);
+    background: transparent;
+}
+
+/* Banner */
 .banner__left {
     left: 10%;
     z-index: 1;
@@ -186,7 +214,6 @@ header {
 
 .carousel-inner {
     border-radius: 0 0 0 20px;
-    height: 100vh;
 }
 
 .carousel-item:before {
@@ -197,6 +224,29 @@ header {
     top: 0;
     left: 0;
     background: rgb(0 0 0 / 17%);
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-subtitle {
+    position: absolute;
+    right: 28px;
+    bottom: 26px;
+    color: var(--bg-color);
+}
+
+.carousel-subtitle p {
+    font-size: 1.1rem;
+}
+
+.carousel-subtitle h4 span {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.carousel-subtitle h4 {
+    margin-bottom: 0.2rem;
 }
 
 .carousel-indicators li {
@@ -210,6 +260,8 @@ header {
 .carousel-indicators li.active {
     background-color: var(--primary-color);
 }
+
+/* Quality */
 
 /* Media queries */
 @media (min-width: 1280px) {
