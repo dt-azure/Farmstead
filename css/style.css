@@ -7,11 +7,12 @@
 :root {
     --header-font: 'Volkhov', serif;
     --bg-color: #fff;
-    --bg-gey: #f4f4f4;
+    --bg-grey: #f4f4f4;
     --primary-color: #fb811e;
     --secondary-color: #009f4d;
     --header-color: #060606;
     --font-color: #707070;
+    --border-color-light: #eee;
 }
 
 body {
@@ -23,6 +24,10 @@ body {
 
 h1, h2, h3, h4 {
     font-family: var(--header-font);
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .btn:focus,
@@ -322,6 +327,43 @@ header {
 .quality__stats span {
     font-size: 1.125rem;
     font-weight:600;
+}
+
+/* Features */
+.features .row {
+    margin: 0;
+    width: 100%;
+}
+
+.features__item {
+    margin-top: 30px;
+}
+
+.features__content {
+    padding: 2rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: 0.3 ease-in;
+}
+
+.features__text h4 {
+    color: var(--header-color);
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+.features__text p {
+    color: var(--font-color);
+    margin: 0;
+}
+
+.features__content:hover .features__text h4 {
+    color: var(--secondary-color);
+}
+
+.features__content:hover {
+    border: 1px solid var(--border-color-light);
+    transition: 0.3s ease-in;
 }
 
 /* Media queries */
