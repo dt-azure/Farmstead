@@ -34,6 +34,10 @@ form {
     display: block;
 }
 
+.container {
+    padding: 0;
+}
+
 .small-title {
     color: var(--primary-color);
     font-size: 1.375rem;
@@ -63,6 +67,24 @@ form {
 .main-btn:hover {
     background-color: var(--secondary-color);
     color: #fff;
+}
+
+.main-intro h3 {
+    color: var(--primary-color);
+    font-size: 1.375rem;
+}
+
+.main-intro h2 {
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    font-weight: 600;
+    color: var(--header-color);
+}
+
+.main-intro p {
+    margin-top: 1rem;
+    line-height: 1.6875rem;
+    font-size: 1.0625rem;
 }
 
 /* Header */
@@ -262,11 +284,50 @@ header {
 }
 
 /* Quality */
+.quality__item i {
+    color: var(--primary-color);
+    font-size: 1.875rem;
+    padding-top: 3px;
+}
+
+.quality__text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--header-color);
+}
+
+.quality__right img {
+    border-radius: 30px;
+}
+
+.quality__stats {
+    background: var(--primary-color);
+    padding: 40px;
+    box-shadow: 30px 30px 30px rgb(0 0 0 / 20%);
+    border-radius: 0 0 100px 0;
+    color: var(--bg-color);
+    min-width: 300px;
+    bottom: 40px;
+    left: -80px;
+}
+
+.quality__stats h5 {
+    font-size: 4.375rem;
+    line-height: 5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.quality__stats span {
+    font-size: 1.125rem;
+    font-weight:600;
+}
 
 /* Media queries */
 @media (min-width: 1280px) {
         .container {
-            max-width: 1280px;
+            max-width: 1200px;
         }
 }
 
