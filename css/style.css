@@ -21,7 +21,10 @@ body {
     font-family: 'Source Sans 3', sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: var(--header-font);
 }
 
@@ -45,6 +48,13 @@ form {
     font-size: 2.5rem;
     font-weight: 600;
     font-family: var(--header-font);
+}
+
+.title-style {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: var(--header-color);
 }
 
 .main-btn {
@@ -261,13 +271,59 @@ header {
     background-color: var(--primary-color);
 }
 
+/* Intro  */
+
+.intro__right .img {
+    width: 65px;
+    margin: auto;
+}
+
+.intro__right .intro__item {
+    text-align: center;
+
+    height: 200px;
+    background-color: rgba(251, 251, 251, 0.4);
+    display: inline;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: all .5s;
+}
+
+.intro__right .intro__item:hover {
+    box-shadow:
+        0 0 80px 0 rgba(0, 0, 0, .3);
+      
+}
+
+
+.intro__right .item__bg {
+    background-color: var(--bg-color);
+    padding: 24px 0;
+    border-radius: 30px;
+
+}
+
+.intro__right .item__bg .title-head {
+    color: var(--header-color);
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.intro__right .item__bg .title-head:hover {
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
 /* Quality */
 
 /* Media queries */
 @media (min-width: 1280px) {
-        .container {
-            max-width: 1280px;
-        }
+    .container {
+        max-width: 1280px;
+    }
 }
 
 /* Keyframes */
