@@ -22,10 +22,7 @@ body {
     font-family: 'Source Sans 3', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4, h5 {
     font-family: var(--header-font);
 }
 
@@ -240,26 +237,26 @@ p {
 
 .quality__stats {
     background: var(--primary-color);
-    padding: 40px;
+    padding: 20px;
     box-shadow: 30px 30px 30px rgb(0 0 0 / 20%);
     border-radius: 0 0 100px 0;
     color: var(--bg-color);
-    min-width: 300px;
+    min-width: 250px;
     bottom: 40px;
-    left: -80px;
+    left: -20px;
 }
 
 .quality__stats h5 {
-    font-size: 4.375rem;
+    font-size: 3.375rem;
     line-height: 5rem;
     font-weight: 600;
     margin: 0;
 }
 
-.quality__stats span {
-    font-size: 1.125rem;
-    font-weight: 600;
-}
+    .quality__stats span {
+        font-size: 1.125rem;
+        font-weight: 600;
+    }
 
 /* Features */
 .features .row {
@@ -330,6 +327,14 @@ p {
         font-size: 80px;
         left: 0.2rem;
         top: 0.8rem;
+    }
+    .quality__stats {
+        padding: 40px;
+        left: -80px;
+        min-width: 300px;
+    }
+    .quality__stats h5 {
+        font-size: 4.375rem;
     }
 }
 
