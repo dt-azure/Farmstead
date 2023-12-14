@@ -404,7 +404,7 @@ h4.title-bg-content {
     width: 50%;
     height: 100%;
     position: absolute;
-    
+
     top: 0;
     left: -100%;
     display: block;
@@ -413,12 +413,81 @@ h4.title-bg-content {
     transition: all 0.75s;
 }
 
-
-
-
 .products .products__item:hover::after {
     left: 125%;
 }
+
+/* Review  */
+.review {
+    background-image: url(../img/bg1.jpg);
+    height: 479px;
+
+}
+
+.review .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#reviewContent .carousel-caption img {
+    width: 88px;
+    border-radius: 50%;
+}
+
+#reviewContent .carousel-item {
+    height: 479px;
+}
+
+#reviewContent .carousel-caption {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 52%;
+}
+
+#reviewContent .review__right p {
+    font-size: 22px;
+    text-indent: 35px;
+
+}
+
+#reviewContent .review__right {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+#reviewContent .review__right span {
+    font-size: 25px;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-align: left;
+}
+
+#reviewContent .review__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* NHAP  */
+#carouselExampleCaptions .carousel-caption img {
+    /* hình có dạng hình vuông thì chỉ cần xét width */
+    width: 500px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
