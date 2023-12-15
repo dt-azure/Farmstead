@@ -7,6 +7,10 @@ header {
     transition: all 0.4s ease 0s;
 }
 
+.search-bar {
+    margin-top: 3px;
+}
+
 .search-bar input {
     border: solid 1px #eee;
     width: 35px;
@@ -39,22 +43,13 @@ header {
     cursor: pointer;
 }
 
-.light-theme {
-    display: none;
-}
-
-.dark-theme {
-    font-size: 1.8rem;
-    color: var(--bg-color);
-}
-
 .dropdown-toggle::after {
     display: none;
 }
 
 .dropdown-toggle i {
     font-size: 1.8rem;
-    color: var(--bg-color);
+    color: var(--font-color-white);
 }
 
 .dropdown-toggle {
@@ -114,3 +109,30 @@ header {
 .navbar-changed .navbar .navbar {
     transform: translateY(-3px);
 }
+
+/* Theme switch toggle */
+.toggle-container {
+    width: 24px;
+    height: 24px;
+}
+
+.light-theme {
+    display: none;
+    font-size: 28px;
+    color: var(--font-color-white);
+}
+
+.dark-theme {
+    font-size: 1.8rem;
+    color: var(--font-color-white);
+    padding-left: 3px;
+}
+
+input:checked+.toggle-container .light-theme {
+    display: block;
+}
+
+input:checked+.toggle-container .dark-theme {
+    display: none;
+}
+

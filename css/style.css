@@ -12,7 +12,16 @@
     --secondary-color: #009f4d;
     --header-color: #060606;
     --font-color: #707070;
+    --font-color-white: #fff;
     --border-color-light: #eee;
+}
+
+[data-theme="dark"] {
+    --bg-color: #222222;
+    --bg-grey: #0b0d0e;
+    --font-color: #b7b7b7;
+    --header-color: #fdfffc;
+
 }
 
 body {
@@ -20,6 +29,7 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     font-family: 'Source Sans 3', sans-serif;
+    background: var(--bg-color);
 }
 
 h1, h2, h3, h4, h5 {
@@ -145,9 +155,9 @@ p {
     position: absolute;
     left: 1rem;
     top: -0.2rem;
-    z-index: 100;
-    opacity: 0.08;
+    z-index: -1;
     font-weight: 700;
+    color: var(--bg-grey);
 }
 
 .banner__text p:last-of-type {
@@ -190,7 +200,7 @@ p {
     position: absolute;
     right: 28px;
     bottom: 26px;
-    color: var(--bg-color);
+    color: var(--font-color-white);
 }
 
 .carousel-subtitle p {
@@ -240,7 +250,7 @@ p {
     padding: 20px;
     box-shadow: 30px 30px 30px rgb(0 0 0 / 20%);
     border-radius: 0 0 100px 0;
-    color: var(--bg-color);
+    color: var(--font-color-white);
     min-width: 250px;
     bottom: 40px;
     left: -20px;
