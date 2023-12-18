@@ -71,6 +71,13 @@ form {
     font-family: var(--header-font);
 }
 
+.title-style {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: var(--header-color);
+}
+
 .main-btn {
     background-color: var(--primary-color);
     padding: 12px 30px;
@@ -227,6 +234,156 @@ p {
     background-color: var(--primary-color);
 }
 
+/* Intro  */
+
+.intro__right .img {
+    width: 65px;
+    margin: auto;
+}
+
+.intro__right .intro__item {
+    text-align: center;
+
+    height: 200px;
+    background-color: rgba(251, 251, 251, 0.4);
+    display: inline;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: all .5s;
+}
+
+.intro__right .intro__item:hover {
+    box-shadow:
+        0 0 80px 0 rgba(0, 0, 0, .3);
+
+}
+
+
+.intro__right .item__bg {
+    background-color: var(--bg-color);
+    padding: 24px 0;
+    border-radius: 30px;
+
+}
+
+.intro__right .item__bg .title-head {
+    color: var(--header-color);
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.intro__right .item__bg .title-head:hover {
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Services  */
+.services {
+    background-color: var(--secondary-color);
+    padding: 100px 0;
+    position: relative;
+}
+
+.services .services__title {
+    padding-bottom: 75px;
+}
+
+.card-body {
+    background: var(--bg-color);
+}
+
+h4.title-bg-content {
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    z-index: 1;
+    opacity: .14;
+    font-size: 12vw;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.services__content .btn {
+    background-color: rgba(0, 159, 77, 16%);
+    color: var(--secondary-color);
+    font-weight: 600;
+    padding: 5px 20px;
+    border-radius: 30px;
+    margin: 9px 0;
+}
+
+.services .services__content a:last-of-type {
+    display: block;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    color: var(--header-color);
+    margin: 15px 0;
+    transition: all 0.3s;
+}
+
+.services .services__content a:last-of-type:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.services .services__content a:first-of-type {
+    margin: 0px;
+}
+
+.services .services__content .card {
+    overflow: hidden;
+    border-radius: 25px;
+    border: none;
+}
+
+
+/* Products  */
+.products {
+    padding: 100px 0;
+}
+
+.products .products__item {
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.products .products__name h5 {
+    width: 85%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 0;
+    color: var(--bg-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.products .products__item::after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+    display: block;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+    transition: all 0.75s;
+}
+
+.products .products__item:hover::after {
+    left: 125%;
+}
+
 /* Quality */
 .quality__item i {
     color: var(--primary-color);
@@ -304,6 +461,96 @@ p {
     border: 1px solid var(--border-color-light);
     transition: 0.4s ease-in;
 }
+
+/* Review  */
+.review {
+    background-image: url(../img/bg1.jpg);
+    height: 479px;
+
+}
+
+.review .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#reviewContent .carousel-caption img {
+    width: 88px;
+    border-radius: 50%;
+}
+
+#reviewContent .carousel-item {
+    height: 479px;
+}
+
+#reviewContent .carousel-caption {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+}
+
+#reviewContent .review__right p {
+    font-size: 22px;
+    text-indent: 35px;
+
+}
+
+#reviewContent .review__right {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+#reviewContent .review__right span {
+    font-size: 25px;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-align: left;
+}
+
+#reviewContent .review__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#carouselExampleCaptions .carousel-caption img {
+    width: 500px;
+    border-radius: 50%;
+}
+
+.carousel-inner {
+    cursor: grab;
+}
+
+/* Back to top button */
+.backToTop {
+    display: block;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: #009f4d;
+    color: #fff;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 90px;
+    right: 15px;
+    opacity: 0;
+    box-shadow: none;
+    transition: all 0.3s;
+}
+
+.backToTop:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 /* Media queries */
 @media screen and (min-width: 576px) {
