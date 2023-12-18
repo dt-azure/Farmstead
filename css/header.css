@@ -56,6 +56,10 @@ header {
     padding: 0;
 }
 
+.dropdown .btn {
+    box-shadow: none;
+}
+
 .dropdown-menu {
     box-shadow: 0 20px 62px rgba(4, 20, 69, .1);
     min-width: 14rem;
@@ -99,6 +103,10 @@ header {
     height: 70px;
     background: var(--bg-color);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+}
+
+.navbar-changed .main-logo {
+    color: var(--header-color);
 }
 
 .navbar-changed .theme-switch i,
