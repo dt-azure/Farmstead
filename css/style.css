@@ -361,7 +361,7 @@ h4.title-bg-content {
     left: 50%;
     transform: translateX(-50%);
     padding: 0.5rem 0;
-    color: var(--bg-color);
+    color: #fff;
     font-weight: 700;
     cursor: pointer;
 }
